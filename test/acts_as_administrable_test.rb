@@ -2,10 +2,12 @@ require File.dirname(__FILE__) + '/test_helper'
 
 class Hickwall < ActiveRecord::Base
   acts_as_administrable
+  acts_as_yaffle
 end
  
 class Wickwall < ActiveRecord::Base
   acts_as_administrable :yaffle_text_field => :last_tweet
+  acts_as_yaffle :yaffle_text_field => :last_tweet
 end
  
 class ActsAsAdministrableTest < Test::Unit::TestCase

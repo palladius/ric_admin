@@ -1,6 +1,5 @@
 # Include hook code here
 
-require 'ric'       # GEM, for colors
 require 'ric_admin' # local in lib/ric_admin.rb , to keep this clean
 
 # TODO refactor me in better place :)
@@ -9,7 +8,7 @@ $ric_admin_conf = {
 }
 
 # TODO dry version!
-puts "Riccardo plugin hook conf = v.#{$ric_admin_conf}, yay!") 
+puts "Riccardo plugin hook conf = v.#{$ric_admin_conf}, yay!"
 begin
   pyellow "\n\t[ric_admin] Loading ric_admin plugin v#{$ric_admin_conf[:ver] rescue 'ErrVerr' }" 
 rescue Exception => e

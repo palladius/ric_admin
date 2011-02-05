@@ -11,10 +11,11 @@ I'd like to have an admin interface to models, with some magic:
 Example
 =======
 
-Install (on Rails 3):
- 
- rails plugin install git@github.com:palladius/ric_admin.git
+Install (on rails3):
+ # // go to your application base and type the following:
+ $ rails plugin install git@github.com:palladius/ric_admin.git
 
-TODO You should go to /ric_admin/ , provided you're an admin user (you should define "current_user.admin?" )
+You should go to /ric_admin/ , provided you're an admin user (you should define "current_user.admin?" )
+
 
 Copyright (c) 2011 [Riccardo Carlesso], released under the MIT license
