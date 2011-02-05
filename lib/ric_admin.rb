@@ -1,30 +1,15 @@
-# RicAdmin
+# RicAdmin Library. Keep this compact (only requires, NO CODE PLEASE)
 
 #pyellow 'lib/ric_admin.rb: start'
 require "ric_admin/core_ext"
+require "ric_admin/array"
+require "ric_admin/hash"
 
-#require "ric_admin/strings"
-#
-# String.class_eval do
-#   def to_squawk
-#     "squawk! #{self}".strip
-#   end
-# end
-#
-# Hash.class_eval do
-#   def is_a_special_hash?
-#     true
-#   end
-# end
-# 
-# class ::Array
-#   def names
-#     map{|x| x.name}
-#   end
-# end
-# 
-# class ::Hash
-#   def qwerty
-#     'also a hash has a qwerty!'
-#   end
-# end
+class ::Object
+  def ric_admin_test
+    'This is a test method for any Object..'
+  end
+  def rat
+    'Yet another test method for any Object..'
+  end
+end

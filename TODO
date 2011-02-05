@@ -6,3 +6,5 @@
 - Install : perfect!
 	rails plugin install --force git@github.com:palladius/ric_admin.git
 - test: error on custom methods :-(
+
+String method to_squawk doesnt work!

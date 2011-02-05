@@ -1,26 +1,12 @@
 # vendor/plugins/ric_admin/lib/ric_admin/core_ext.rb
- 
-String.class_eval do
-  def to_squawk
-    "squawk! #{self}".strip
-  end
-  
-  def qwe
-    "worthless method called 'qwe' for '#{self}'"
-  end
-end
-
-# TODO refactor into activerecord_base.rb
-::ActiveRecord::Base.class_eval do 
-  def self.idz
-    find(:all).map{|record| record.id rescue '?!?' } rescue "SomeErr with AR::B.idz: '#{$!}'"
-  end
-end
 
 
-#
-#class String
-#  def to_squawk
-#    "squawk! #{self}".strip
-#  end
-#end
+ String.class_eval do
+   def to_squawk3
+     "squawk3! #{self}".strip
+   end
+
+   def core_ext
+     "worthless method called 'core_ext' for '#{self}'. You should remove these when String Array and Hash work!"
+   end
+ end
