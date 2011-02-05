@@ -4,6 +4,4 @@
 #require 'ric'
 #pyellow "Installed ric_admin vTODO, yay!" rescue
 
-puts "
-  Installed [ric_admin] v#{File.read('VERSION') rescue '??' }, yay!
-"
+puts "[ric_admin] v#{File.read(File.dirname(__FILE__)+'/VERSION') rescue '??' } Installed , yay!"

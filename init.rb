@@ -2,9 +2,10 @@
 
 require 'ric_admin' # local in lib/ric_admin.rb , to keep this clean
 
+
 # TODO refactor me in better place :)
 $ric_admin_conf = {
-  :ver => '0.0.5'
+  :ver => "#{File.read(File.dirname(__FILE__)+'/VERSION') rescue 'UnknVer'}"
 }
 
 # TODO dry version!
