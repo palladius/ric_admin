@@ -12,4 +12,8 @@ ActiveRecord::Schema.define(:version => 0) do
   create_table :woodpeckers, :force => true do |t|
     t.string :name
   end
+  
+  # TODO Riccardo, the aforementioned schma works.
+  # Create maybe user_options ?
+  # Maybe migrate users schema? Maybe adding "admin" boolean?
 end
