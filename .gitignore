@@ -1,0 +1,3 @@
+test/*.log
+test/ric_admin_plugin.sqlite3
+*~

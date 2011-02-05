@@ -17,7 +17,7 @@
     :app_name            => 'travasa_plugin',
     :from                => '~/git/yaffle_guide/vendor/plugins/ric_admin/',
     :to                  => '~/git/ric_admin/',
-    :files               => ["**/{*.{rb,sh}}", 'README', 'VERSION' , ],
+    :files               => ["**/{*.{rb,sh}}", 'README', 'VERSION' , '.gitignore' ],
   }
 
   def usage(comment=nil)
@@ -54,7 +54,7 @@
         command = "cp \"#{from_file}\" \"#{to_file}\""
       else
         # mkdir dest AND copy file
-        pred "Dir '#{destdir}' doesnt exist!"
+        pred "Hey, Dir '#{destdir}' doesnt exist! Creating it.."
         command = "mkdir -p \"#{destdir}\" && cp \"#{from_file}\" \"#{to_file}\""
       end
       
