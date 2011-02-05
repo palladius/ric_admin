@@ -1,1 +1,8 @@
 - tests dont work ARGH!
+
+
+# Things Ive done:
+
+- Install : perfect!
+	rails plugin install --force git@github.com:palladius/ric_admin.git
+- test: error on custom methods :-(
