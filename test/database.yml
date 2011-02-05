@@ -1,0 +1,26 @@
+# vendor/plugins/ric_admin/test/database.yml
+# ERR rake DB=sqlite
+# OK  rake DB=sqlite3
+# --  rake DB=mysql
+# --  rake DB=postgresql
+
+sqlite:
+  :adapter:  sqlite
+  :dbfile:   vendor/plugins/ric_admin/test/ric_admin_plugin.shouldnt.sqlite.db
+  :database: vendor/plugins/ric_admin/test/ric_admin_plugin.sqlite
+sqlite3:
+  :adapter: sqlite3
+  :dbfile: vendor/plugins/ric_admin/test/ric_admin_plugin.sqlite3
+  :database: vendor/plugins/ric_admin/test/ric_admin_plugin.sqlite3
+postgresql:
+  :adapter: postgresql
+  :username: postgres
+  :password: postgres
+  :database: ric_admin_plugin_test
+  :min_messages: ERROR
+mysql:
+  :adapter: mysql
+  :host: localhost
+  :username: root
+  :password: password
+  :database: ric_admin_plugin_test
