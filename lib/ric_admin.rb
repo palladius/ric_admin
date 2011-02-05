@@ -5,10 +5,10 @@
 #require 'ric'       # GEM, for colors
 
 pyellow '[pyellow works!] lib/ric_admin.rb: start' rescue "pyellow"
-#require "ric_admin/core_ext"
 require 'ric_admin/acts_as_administrable'
 require "ric_admin/array"
 require "ric_admin/hash"
+require "ric_admin/ric_admin"
 require "ric_admin/string"
 
 class ::Object

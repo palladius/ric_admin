@@ -41,6 +41,12 @@ class RicAdminTest < Test::Unit::TestCase
     hash = {:foo => :bar}
     assert_equal hash.qwerty, 'also a hash has a qwerty!'
   end
+  
+  def test_ricadmin_has_a_nice_version
+    ver = RicAdmin.version   # i.e. 0.1.2
+    assert_equal ver.class, String
+    assert_equal ver.split('.'), 3   # 3 fields
+  end
  
 end
 
