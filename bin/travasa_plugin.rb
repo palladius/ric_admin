@@ -31,7 +31,7 @@
   # tipo xcopy
   def travasa(from,to,glob_files, opts={})
     puts "+ Travasing: #{yellow from} ==> #{green to}"
-    puts "+ First the differences:"
+
     unless File.exists?("#{to}/.git")
       fatal "Sorry cant travase data to an unversioned dir, u'know the casin?!?"
       exit 1
@@ -39,8 +39,11 @@
     unless File.exists?("#{to}/.safe_travasa")
       fatal 12, "Sorry cant travase data unless you ask me to. You have to do this before:\n  #{yellow "touch #{to}/.safe_travasa"} . Thanks"
     end
-    # With this i can understand what has been deleted :)
+
+    # With this i can understand what has been deleted, with lots of magic from git on both ends.. :)
+    deb "+ First the differences:"
     deb `diff -qr #{from} #{to} |egrep -v '\\.git' `
+
     puts "+ Files: #{cyan glob_files}"
     Dir.chdir(from)
     Dir.glob(glob_files).each{ |file|

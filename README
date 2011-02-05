@@ -17,5 +17,4 @@ Install (on rails3):
 
 You should go to /ric_admin/ , provided you're an admin user (you should define "current_user.admin?" )
 
-
 Copyright (c) 2011 [Riccardo Carlesso], released under the MIT license
