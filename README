@@ -2,7 +2,8 @@ RicAdmin
 ========
 
 This is my first plugin for Rails 3.
-I developed this by following the yAffle example here: http://guides.rubyonrails.org/plugins.html
+
+I developed this by following the yaffle example here: http://guides.rubyonrails.org/plugins.html
 I'd like to have an admin interface to models, with some magic:
 - TODO Auto graph of models and their relationships.
 - TODO view of all models with warnings for invalid models
@@ -11,8 +12,10 @@ I'd like to have an admin interface to models, with some magic:
 Example
 =======
 
-Install (on rails3):
- # // go to your application base and type the following:
+how to use on Rails 3:
+
+ - Add 'ric' to Gemfile
+
  $ rails plugin install git@github.com:palladius/ric_admin.git
 
 You should go to /ric_admin/ , provided you're an admin user (you should define "current_user.admin?" )

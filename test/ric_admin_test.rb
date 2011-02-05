@@ -1,19 +1,3 @@
-#require 'test_helper'
-#
-#class RicAdminTest < ActiveSupport::TestCase
-#  # Replace this with your real tests.
-#  test "the truth" do
-#    assert true
-#  end
-#  
-#  test "always wrong :)" do
-#    assert_equal 42 , 43
-#  end
-#   
-#end
-
-# vendor/plugins/ric_admin/test/ric_admin_test.rb
- 
 require File.dirname(__FILE__) + '/test_helper'
  
 class RicAdminTest < Test::Unit::TestCase
@@ -42,10 +26,12 @@ class RicAdminTest < Test::Unit::TestCase
     assert_equal hash.qwerty, 'also a hash has a qwerty!'
   end
   
-  def test_ricadmin_has_a_nice_version
-    ver = RicAdmin.version   # i.e. 0.1.2
-    assert_equal ver.class, String
-    assert_equal ver.split('.'), 3   # 3 fields
+  def test_ric_admin_class_has_a_valid_version_like_1_0_0alpha
+    #ver = RicAdminClass.version   # i.e. 0.1.2
+    ppurple "(RicAdminClass.version: '''#{RicAdminClass.version}''')"
+    assert_equal RicAdminClass.version.class, String
+    assert_equal RicAdminClass.version.split('.').size, 3   # 3 fields
+    assert_match /^\d+\.\d+\.\d+$/, RicAdminClass.version
   end
  
 end
