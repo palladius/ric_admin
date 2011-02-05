@@ -12,7 +12,7 @@
 #   
 #end
 
-# vendor/plugins/yaffle/test/yaffle_test.rb
+# vendor/plugins/ric_admin/test/ric_admin_test.rb
  
 require File.dirname(__FILE__) + '/test_helper'
  

@@ -1,4 +1,4 @@
-# vendor/plugins/yaffle/lib/ric_admin/core_ext.rb
+# vendor/plugins/ric_admin/lib/ric_admin/core_ext.rb
  
 String.class_eval do
   def to_squawk
