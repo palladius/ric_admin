@@ -1,0 +1,10 @@
+
+plugin_history:
+  0.1.7: Added Object methods
+  0.1.6: version is being tested upon! Also testing 'upon' word :)
+  0.1.5: Removed core_ext, added RicAdmin class..
+  0.1.4: Dry VERSION and smooth travasa :)
+  0.1.0: test pass!!!
+  0.0.6: removed rails/ dir, hope now its better!
+  0.0.5: added acts_as_administrable
+  0.0.1: created and tested and ok.
