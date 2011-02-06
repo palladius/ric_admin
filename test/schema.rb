@@ -13,6 +13,17 @@ ActiveRecord::Schema.define(:version => 0) do
     t.string :name
   end
   
+  # riccardo
+  create_table :facebook_friends, :force => true do |t|
+    t.string :user_id                    # user 'guest'
+    t.string :friend_facebook_id         # one for every user of 'guest'
+    t.string :name
+    t.string :email
+    t.text   :description
+    t.text   :sys_notes                  # for pvt use
+    t.datetime :last_twitted_at
+  end
+  
   # TODO Riccardo, the aforementioned schma works.
   # Create maybe user_options ?
   # Maybe migrate users schema? Maybe adding "admin" boolean?

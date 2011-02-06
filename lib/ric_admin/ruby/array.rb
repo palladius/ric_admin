@@ -12,5 +12,10 @@ class ::Array
   def ids
     map{|x| x.id}
   end
+  
+  # I love this! Like: [ 1 , 2 , 3 ]
+  def to_s
+    "[ "+ self.join(', ') +" ]"
+  end
 end
 

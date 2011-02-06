@@ -1,5 +1,6 @@
 
 plugin_history:
+  0.1.8: Added Routes
   0.1.7: Added Object methods
   0.1.6: version is being tested upon! Also testing 'upon' word :)
   0.1.5: Removed core_ext, added RicAdmin class..

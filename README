@@ -12,9 +12,10 @@ I'd like to have an admin interface to models, with some magic:
 Example
 =======
 
-how to use on Rails 3:
+How to use on Rails 3:
 
  - Add 'ric' to Gemfile
+ - map.ric_admin   # add to config/routes.rb
 
  $ rails plugin install git@github.com:palladius/ric_admin.git
 
